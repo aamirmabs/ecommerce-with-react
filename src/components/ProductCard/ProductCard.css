@@ -1,0 +1,31 @@
+.product-card {
+  border: 1px solid black;
+  width: 300px;
+  padding: 0.25rem;
+}
+
+.product-image img {
+  width: 100%;
+}
+
+.product-parameters {
+  font: inherit;
+}
+
+.product-parameters .title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.product-parameters .price {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.product-parameters .rating {
+  font-size: inherit;
+}
+
+.product-parameters .brand {
+  font-weight: 100;
+}
