@@ -1,5 +1,6 @@
 import "./App.css";
 import SampleComponent from "./components/SampleComponent";
+import ProductGrid from "./components/ProductGrid/ProductGrid";
 import ProductCard from "./components/ProductCard/ProductCard";
 
 const product = {
@@ -101,7 +102,18 @@ function App() {
     <div className="App">
       <h1>Clean React</h1>
       <SampleComponent />
-      <ProductCard product={product.keyboard001} />
+      <ProductGrid>
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+        <ProductCard product={product.keyboard001} />
+      </ProductGrid>
     </div>
   );
 }

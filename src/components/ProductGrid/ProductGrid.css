@@ -1,0 +1,12 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  gap: 0.25rem;
+  grid-template-areas: ". . .";
+}
