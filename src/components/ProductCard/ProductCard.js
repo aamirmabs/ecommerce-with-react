@@ -30,8 +30,6 @@ import "./ProductCard.css";
 function ProductCard(props) {
   const { title, images } = props.product;
   const { price, rating, brand } = props.product.parameters;
-  console.log(props);
-  console.log(props[title]);
   return (
     <div className="product-card">
       <div className="product-image">
