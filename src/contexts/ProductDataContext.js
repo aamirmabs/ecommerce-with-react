@@ -3,6 +3,32 @@ import React, { createContext, useContext } from "react";
 const ProductContext = createContext(null);
 export { ProductContext };
 
+// Keyboard layouts
+
+// code: 40
+// text: 40%
+
+// code: 50
+// text: 50%
+
+// code: 60
+// text: 60%
+
+// code: 65
+// text: 65%
+
+// code: tkl
+// text: Tenkeyless (TKL)
+
+// code: full
+// text: Full Size (100%)
+
+// code: ergo
+// text: Split & Ergonomic
+
+// code: diy
+// text: DIY Keyboard Kits
+
 export function ProductProvider({ children }) {
   const productData = {
     keyboard001: {
@@ -71,6 +97,93 @@ export function ProductProvider({ children }) {
             priority: 2,
           },
           { text: `Weight, assembled: 24.7 oz (700 g)`, priority: 2 },
+        ],
+        included: [
+          {
+            text: `Keyboard`,
+            priority: 1,
+          },
+          {
+            text: `Removable magnetic feet`,
+            priority: 1,
+          },
+          {
+            text: `USB-A-to-C cable`,
+            priority: 1,
+          },
+          {
+            text: `Switch puller`,
+            priority: 1,
+          },
+          {
+            text: `Keycap puller`,
+            priority: 1,
+          },
+        ],
+      },
+    },
+    keyboard002: {
+      title: `DROP + TOKYO KEYBOARD TOKYO60 KEYBOARD KIT`,
+      images: {
+        base: `/assets/images/products/keyboard002/`,
+        card: {
+          path: `card.jpg`,
+        },
+        slider: [`1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`, `5.jpg`],
+      },
+      parameters: {
+        price: 250,
+        rating: 4,
+        brand: "Tokyo",
+        layout: "60",
+        layoutText: "60%",
+      },
+      description: {
+        primary: `Designed in Japan by Tokyo Keyboard, the Tokyo60 is a compact HHKB-style board with a sleek, seamless design. This Season 4 version features two new case colors, the return of the black-on-gray keycap set from Season 2 (and the coral Fn key from Season 3), as well as a USB-C PCBA. Constructed with two pieces of 6000-series aluminum, the case is machined to have a 5-degree angle. This angle, combined with the Cherry-profile keycaps, is optimized for an ergonomic feel. Built into the aluminum case, the integrated plate adds even more stability. Thanks to the hot-swap sockets on the PCBA, you can swap in new switches in minutes without any soldering—so feel free to try a new feel whenever you want. With a fully programmable layout and RGB lighting, the board can be customized any way you like. For more on the Happy Hacking Keyboard style, check out this interview with the creator.`,
+        secondary: [
+          {
+            title: `A 60% KEYBOARD DONE RIGHT, WITH MORE TO COME LATER`,
+            description: `The idea behind the Tokyo60 was to create a keyboard that focuses on one design, one layout, and a handful of colors, rather than offering countless combinations that can lead to complications. Everything from the feel of the case to the anodized finish to the sound of bottoming out is a reflection of the time and effort that went into the design. For this fourth run (Season 4), we’re offering two new case colors and the return of the Tokyo60 Season 2 dye-subbed keycaps (with the coral Fn key from Season 3). In future Seasons, we’ll be expanding the offering with more colors and accessories. Stay tuned!`,
+            priority: 1,
+          },
+          {
+            title: `PROGRAMMABILITY, BACKLIGHTING, & SWITCHES`,
+            description: `Though it comes fully programmed (once you assemble it), the Tokyo60 can be completely reprogrammed via QMK firmware. It also has customizable RGB underglow visible with an optional acrylic diffuser. You can position the acrylic diffuser on the bottom or sandwich it between the aluminum pieces, depending on your style. What’s more, at checkout, you’ll be able to add a wide range of switches to get just the feel you want.`,
+            priority: 1,
+          },
+        ],
+      },
+      specifications: {
+        specs: [
+          { text: `60 keys`, priority: 1 },
+
+          { text: `CNC chassis with integrated plate`, priority: 1 },
+          {
+            text: `Acrylic diffuser (can be positioned on the bottom or between the aluminum pieces)`,
+            priority: 1,
+          },
+
+          {
+            text: `2-piece aluminum construction (high-profile 6000 series)`,
+            priority: 1,
+          },
+          { text: `5º case angle with chamfered edges`, priority: 1 },
+          { text: `HHKB-style layout`, priority: 1 },
+          { text: `Designed in Tokyo`, priority: 1 },
+          {
+            text: `USB-C PCBA with hot-swap sockets (solderless kit)`,
+            priority: 1,
+          },
+          {
+            text: `Compatible with MX style switches (plate and PCB mount)`,
+            priority: 1,
+          },
+          { text: `Cherry profile dye-sublimated keycaps`, priority: 1 },
+          {
+            text: `Dimensions, assembled: 11.8 x 4.4 x 1.4 in (30 x 11.2 x 3.6 cm)`,
+            priority: 1,
+          },
+          { text: `Weight, assembled: 24.7 oz (700 g)`, priority: 1 },
         ],
         included: [
           {

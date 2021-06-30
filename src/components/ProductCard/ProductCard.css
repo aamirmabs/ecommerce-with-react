@@ -1,8 +1,22 @@
+.wrapper {
+  flex: 0 0 33.333%;
+  display: flex;
+  padding: 10px; /* gutter width */
+}
+
 .product-card {
-  border: 1px solid black;
+  /* border: 1px solid black;
   width: 100%;
   max-width: 300px;
   padding: 0.25rem;
+   */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  flex: 0 0 100%;
+}
+
+.product-card:hover {
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .product-image img {
@@ -11,6 +25,7 @@
 
 .product-parameters {
   font: inherit;
+  padding: 0.25rem 0.5rem;
 }
 
 .product-parameters .title {
