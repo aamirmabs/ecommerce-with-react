@@ -1,4 +1,5 @@
 import React from "react";
+import StarRating from "./StarRating";
 import "./ProductCard.css";
 
 function ProductCard(props) {
@@ -14,7 +15,9 @@ function ProductCard(props) {
         <div className="product-parameters">
           <div className="title">{title}</div>
           <div className="price">$ {price}</div>
-          <div className="rating">{rating}</div>
+          <div className="rating">
+            {rating} <StarRating rating={rating} />
+          </div>
           <div className="brand">{brand}</div>
         </div>
       </div>
